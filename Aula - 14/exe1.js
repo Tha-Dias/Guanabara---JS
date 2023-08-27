@@ -10,7 +10,7 @@ while(contador <= 10 ){
     contador ++
 } */
 
-console.log('Tabuada do 3')
+/* console.log('Tabuada do 3')
 
 do {   // faz o teste lógico no final do loop
     mult = contador * 3
@@ -19,4 +19,12 @@ do {   // faz o teste lógico no final do loop
     contador ++
 
 }while(contador <= 10)
+ */
 
+console.log("Tabuada do 4")
+for (var i = 0; i <= 10 ; i++) {
+    mult = i * 4
+
+    console.log(`4 x ${i} = ${mult}`)
+    
+}
