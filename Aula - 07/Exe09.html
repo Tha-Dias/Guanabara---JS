@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            width: 550px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: pink;
+            text-align: center;
+            margin: 10px auto;
+        
+        }
+        div h1 {
+            color: white
+        }
+        
+        input{
+            text-align: center;
+            font-size: 16px;
+            color: grey;
+            border-radius: 15px;
+            border: none;
+            padding: 5px;
+            margin: 10px 0;
+            width: 180px;
+            height: 40px;
+            box-shadow: 13px 5px 20px 1px #522b2b;
+        }
+        h3#resultado {
+            color: #522b2b;
+        }
+        button {
+            background-color: rgb(148, 73, 86);
+            border-radius: 15px;
+            font-size: 20px;
+            width: 200px;
+            color: white;
+            padding: 10px;
+            border: outset 4px rgb(250, 167, 181) ;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: rgb(94, 14, 35);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculadora Moderna:</h1>
+        <input type="number" id="n1" placeholder="Escreva um numero">
+        <input type="number" id="n2" placeholder="Escreva outro numero" > 
+        <div>
+            <h3 id="resultado">-</h3>
+        </div>
+    </div>
+    <div>
+        <button id="soma" onclick="soma()">Soma</button>
+        <button id="sub" onclick="subtracao()">Subtração</button>
+        <button id="mult" onclick="mult()">Multiplicação</button>
+        <button id="divi" onclick="divi()">Divisão</button>
+    </div>
+
+    <script>
+        function soma() {
+            var n1t = document.getElementById('n1')
+            var n2t = document.getElementById('n2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(n1t.value)
+            var n2 = Number(n2t.value)
+            var soma = n1 + n2
+            res.innerHTML = `Resultado = ${soma}`
+        }
+        function subtracao() {
+            var n1t = document.getElementById('n1')
+            var n2t = document.getElementById('n2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(n1t.value)
+            var n2 = Number(n2t.value)
+            var sub = n1 - n2
+            res.innerHTML = `Resultado = ${sub}`
+        }
+        function mult() {
+            var n1t = document.getElementById('n1')
+            var n2t = document.getElementById('n2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(n1t.value)
+            var n2 = Number(n2t.value)
+            var mult = n1 * n2
+            res.innerHTML = `Resultado = ${mult}`
+        }
+        function divi() {
+            var n1t = document.getElementById('n1')
+            var n2t = document.getElementById('n2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(n1t.value)
+            var n2 = Number(n2t.value)
+            var div = n1 / n2
+            res.innerHTML = `Resultado = ${div}`
+        }
+    </script>
+</body>
+</html>

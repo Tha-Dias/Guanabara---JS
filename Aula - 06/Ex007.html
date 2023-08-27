@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo DOM</h1>
+    <p>Aqui vai um paragrafo</p>
+    <p name="nome">aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]/* Permite selecionar elementos através do nome da tag */
+        var t = document.getElementById('msg') /* Perimte selecionar elementos através do ID */
+        var c = document.querySelector('div.msg')/*  permite selecionar elementos usando seletores CSS. */
+        var i = document.getElementsByName('nome')/*  permite selecionar elementos que possuem um atributo name específico.  */
+        var cl = document.getElementsByClassName('msg')/* Permite selecionar elementos através de uma classe */
+        c.style.background = 'black'
+    </script>
+</body>
+</html>

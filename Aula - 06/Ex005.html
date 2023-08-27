@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        var idade = Number(window.prompt('Digite sua idade: '))
+        var dias = 365 * idade
+        document.write(`Olá, ${nome} !`)
+        document.writeln(`Você tem ${dias} anos de idade`)
+        var salario = Number(window.prompt('Qual é o seu salario atualmente?'))
+        salario = salario * 12
+        document.write(`Você ganha ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} por ano`)
+
+    </script>
+</body>
+</html>

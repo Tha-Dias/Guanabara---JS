@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição1</title>
+    <style>
+        #res {
+            background-color: rgb(223, 121, 121);
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    <p>Qual é o seu país de origem?</p>
+    <input type="text"  id="inPais">
+    <button onclick="resultado()">Verificar</button>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function resultado() {
+            pais = document.getElementById('inPais').value
+            res = document.getElementById('res')
+
+            if(pais != 'Brasil') {
+                res.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+    
+                res.innerHTML += `O país de origem é: ${pais}`
+        }
+    </script>
+
+</body>
+</html>
