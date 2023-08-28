@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>Inicio: <!-- Defini o inicio -->
+                <input type="number" name="txtinicio" id="txtinicio">
+            </p>
+            <p>Fim: <!-- Defini quando o loop chega ao fim -->
+                <input type="number" name="txtFim" id="txtFim">
+            </p>
+            <p>Passo: <!-- intervalo no contador -->
+                <input type="number" name="txtPasso" id="txtPasso">
+            </p>
+            <input type="button" value="Contar" onclick="contando()" >
+        </div>
+        <div id="res">
+            <p>contando...</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;CursoemVídeo</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
