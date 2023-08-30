@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPF</title>
+</head>
+<body>
+    <h1>Testando CPF</h1>
+    
+    <div>
+        <p>Digite seu CPF
+            <input type="text" id="cpf">
+            <input type="button" value="Testando" onclick="testar()">
+        </p>
+        <p>*Não add caracteres especiais (- . , *_) </p>
+    </div>
+    <div>
+        <p id="res">A ultimo numero do seu CPF somado ao primeiro é: </p>
+    </div>
+    
+    <script>
+        var cpf = document.getElementById('cpf')
+        var res = document.getElementById('res')
+
+        function testar() {
+            var cpfn = Number(cpf.value)
+            cpf.push(cpfn)
+
+            console.log(cpf.length)
+/* 
+            if(cpf.length =! 11) {
+                window.alert('CPF invalido, add corretamente contendo 11 digitos')
+            } else {
+                res.innerHTML = `${cpf[0]}+${cpf[10]}`
+
+            }
+ */
+
+        }
+
+    </script>
+</body>
+</html>

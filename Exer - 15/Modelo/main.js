@@ -11,7 +11,7 @@ function tabuada() {
         var i = 1
         tab.innerHTML = ''
         while(i <= 10){
-            var item = document.createElement('option')
+            var item = document.createElement('option')//criei que um elemento 
             item.text = `${n} x ${i} = ${n*i}`
             tab.appendChild(item)
 
